@@ -39,16 +39,17 @@
         <developerConnection>scm:svn:http://192.168.20.10:8088/subversion/trunk/</developerConnection>
     </scm>
 	<distributionManagement>
-    <repository>
-        <id>Rrepo</id>
-        <name>Rrepo</name>
-        <url>http://localhost:8081/nexus/content/repositories/Rrepo/</url>
-    </repository>
-    <snapshotRepository>
-        <id>Srepo</id>
-        <name>Srepo</name>
-        <url>http://localhost:8081/nexus/content/repositories/Srepo/</url>
-    </snapshotRepository>
+  <repository>
+    <id>R-repo</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://localhost:8081/repository/R-repo/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://localhost:8081/repository/snapRepo/</url>
+  </snapshotRepository>
 </distributionManagement>
+	
 
 </project>
